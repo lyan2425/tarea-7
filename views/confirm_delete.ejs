@@ -1,0 +1,9 @@
+<% include('layout') %>
+
+<h1>Confirmar eliminación</h1>
+<p>¿Deseas eliminar el libro "<strong><%= libro.titulo %></strong>" (ID <%= libro.id %>)?</p>
+
+<form action="/libros/borrar/<%= libro.id %>" method="post">
+  <button class="btn btn-danger" type="submit">Sí, eliminar</button>
+  <a class="btn btn-secondary" href="/libros">Cancelar</a>
+</form>

@@ -1,0 +1,21 @@
+{
+  "name": "biblioteca-crud",
+  "version": "1.0.0",
+  "description": "CRUD sencillo para la tabla libros (biblioteca)",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mysql2": "^3.2.0",
+    "body-parser": "^1.20.2",
+    "method-override": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,24 @@
+<% include('layout') %>
+
+<h1><%= libro.id ? 'Editar libro' : 'Nuevo libro' %></h1>
+
+<form action="<%= action %>" method="post">
+  <div class="mb-3">
+    <label class="form-label">Título</label>
+    <input name="titulo" class="form-control" required value="<%= libro.titulo || '' %>">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Autor</label>
+    <input name="autor" class="form-control" required value="<%= libro.autor || '' %>">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Número de páginas</label>
+    <input name="numpaginas" type="number" class="form-control" value="<%= libro.numpaginas || '' %>">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Categoría</label>
+    <input name="categoria" class="form-control" value="<%= libro.categoria || '' %>">
+  </div>
+  <button class="btn btn-success" type="submit">Guardar</button>
+  <a class="btn btn-secondary" href="/libros">Cancelar</a>
+</form>

@@ -1,0 +1,34 @@
+<% include('layout') %>
+
+<h1>Libros</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Autor</th>
+      <th>Páginas</th>
+      <th>Categoría</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% if (libros.length === 0) { %>
+      <tr><td colspan="6">No hay libros registrados.</td></tr>
+    <% } %>
+    <% libros.forEach(libro => { %>
+      <tr>
+        <td><%= libro.id %></td>
+        <td><%= libro.titulo %></td>
+        <td><%= libro.autor %></td>
+        <td><%= libro.numpaginas %></td>
+        <td><%= libro.categoria %></td>
+        <td>
+          <a class="btn btn-sm btn-primary" href="/libros/editar/<%= libro.id %>">Editar</a>
+          <a class="btn btn-sm btn-danger" href="/libros/borrar/<%= libro.id %>">Borrar</a>
+        </td>
+      </tr>
+    <% }) %>
+  </tbody>
+</table>
