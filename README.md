@@ -89,10 +89,4 @@ Editar libro → modificar el título, autor u otros datos de un libro existente
 
 Eliminar libro → borrar libros de la base de datos con confirmación.
 
-⚠️ Notas
 
-Este proyecto es educativo.
-
-No tiene validaciones avanzadas, ni seguridad (login, sesiones, CSRF).
-
-Sirve como base para aprender y luego mejorarlo 🚀
