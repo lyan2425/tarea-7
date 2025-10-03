@@ -79,6 +79,16 @@ Abre en tu navegador
 
 /libros/borrar/:id → Eliminar libro
 
+📚 Funciones principales
+
+Listar libros → ver todos los libros registrados en la base de datos.
+
+Agregar libro → llenar un formulario y guardar un libro nuevo en MySQL.
+
+Editar libro → modificar el título, autor u otros datos de un libro existente.
+
+Eliminar libro → borrar libros de la base de datos con confirmación.
+
 ⚠️ Notas
 
 Este proyecto es educativo.
